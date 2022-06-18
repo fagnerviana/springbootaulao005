@@ -2,9 +2,13 @@ package com.devsupeior.springbootaulao005.entities;
 
 import java.io.Serializable;
 
+
+//@Entity
 public class Product implements Serializable {
-	
 	private static final long serialVersionUID = 1L;
+	
+	//@Id
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
 	private Double price;
@@ -21,6 +25,7 @@ public class Product implements Serializable {
 		this.category=category;
 		
 	}
+	
 	
 	
 	public Category getCategory() {
