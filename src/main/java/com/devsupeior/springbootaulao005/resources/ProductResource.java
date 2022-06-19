@@ -34,7 +34,7 @@ public class ProductResource {
 		//Testando linha de comandos  
 		//Category cat = new Category(1L,"Eletronics");
 		
-		Product prod = productRepository.findById(id);
+		Product prod = productRepository.findById(id).get();
 		return ResponseEntity.ok().body(prod);
 	}
 	

@@ -36,7 +36,7 @@ public class CategoryResource {
 		//Testando linha de comandos  
 		//Category cat = new Category(1L,"Eletronics");
 		
-		Category cat = categoryRepository.findById(id);
+		Category cat = categoryRepository.findById(id).get();
 		return ResponseEntity.ok().body(cat);
 	}
 	
